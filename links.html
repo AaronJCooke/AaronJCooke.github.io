@@ -31,8 +31,25 @@
 </head>
 
 <body>
-
-    <!-- Navigation -->
+<!-- Navigation -->
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand">
+                <a href="papers.html" onclick=$("#menu-close").click();>Research</a>
+            </li>
+            <li>
+                <a href="links.html" onclick=$("#menu-close").click();>Links</a>
+            </li>
+            <li>
+                <a href="code.html" onclick=$("#menu-close").click();>Code</a>
+            </li>
+            <li>
+                <a href="Contact.html" onclick=$("#menu-close").click();>Contact</a>
+            </li>
+        </ul>
+    </nav>
     <header id="top" class="header">
         <div class="text-vertical-center">
             <h1><font color="white">Links</font></h1>
