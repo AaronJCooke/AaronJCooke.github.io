@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Stylish Portfolio - Start Bootstrap Theme</title>
+    <title>Aaron Cooke</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -32,14 +32,37 @@
 
 <body>
 
-    <!-- Navigation -->
+
+ <!-- Navigation -->
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand">
+                <a href="papers.html" onclick=$("#menu-close").click();>Research</a>
+            </li>
+            <li>
+                <a href="links.html" onclick=$("#menu-close").click();>Links</a>
+            </li>
+            <li>
+                <a href="code.html" onclick=$("#menu-close").click();>Code</a>
+            </li>
+            <li>
+                <a href="Contact.html" onclick=$("#menu-close").click();>Contact</a>
+            </li>
+        </ul>
+    </nav>
+
 
     <!-- Header -->
     <header id="top" class="header">
         <div class="text-vertical-center">
-            <h1>Aaron Cooke</h1>
-            <h3>a man for all seasons</h3>
+            <h1><font color="white">Aaron Cooke</font></h1>
+            <h2><font color=#ff9900>a man for all seasons</font></h2>
             <br>
+            <a href="#about" class="btn btn-primary btn-xl page-scroll">
+               <i class="fa fa-3x fa-arrow-circle-down"></i>
+            </a>
         </div>
     </header>
 
@@ -49,7 +72,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2></h2>
-                    <p class="lead">I am an economist specializing in inequality and overlapping generational modelling</a>.</p>
+                    <p class="lead">I am an economist specializing in inequality and overlapping generational modelling. </a></p>
                 </div>
             </div>
             <!-- /.row -->
@@ -70,7 +93,7 @@
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-newspaper-o fa-stack-1x text-primary"></i>
+                                <a href="papers.html"><i class="fa fa-newspaper-o fa-stack-1x text-primary"></i></a>
                             </span>
                                 <h4>
                                     <strong>Papers</strong>
@@ -82,7 +105,7 @@
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-compass fa-stack-1x text-primary"></i>
+                                <a href="links.html"><i class="fa fa-compass fa-stack-1x text-primary"></i></a>
                             </span>
                                 <h4>
                                     <strong>Links</strong>
@@ -94,7 +117,7 @@
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-flask fa-stack-1x text-primary"></i>
+                               <a href="code.html"><i class="fa fa-flask fa-stack-1x text-primary"></i></a>
                             </span>
                                 <h4>
                                     <strong>Code</strong>
@@ -106,7 +129,7 @@
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-envelope fa-stack-1x text-primary"></i>
+                                <a href="teaching.html"><i class="fa fa-envelope fa-stack-1x text-primary"></i></a>
                             </span>
                                 <h4>
                                     <strong>Contact</strong>
@@ -123,6 +146,28 @@
         </div>
         <!-- /.container -->
     </section>
+
+
+ <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h4><strong><a href="papers/cv_7.pdf">Aaron Cooke</a></strong>
+                    </h4>
+                    <p>365 Fairfield Way, U-1063
+                        <br>Storrs, CT 06269-1063</p>
+                        <li><i class="fa fa-envelope-o fa-fw"></i> <a href="aaron.cooke@uconn.edu">aaron.cooke@uconn.edu</a>
+                        </li>
+                    </ul>
+                    <br>
+                    <ul class="list-inline">
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
+    </footer>
 
 </body>
 
